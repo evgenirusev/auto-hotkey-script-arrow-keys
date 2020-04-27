@@ -1,5 +1,4 @@
 #SingleInstance, Force
-
 RAlt::Send {LEFT}
 RWin::Send {DOWN}
 RControl::Send, {RIGHT}
@@ -15,6 +14,10 @@ RShift::Send, {Up}
 
 <^<+RAlt::Send ^+{LEFT}
 <^<+RControl::Send ^+{RIGHT}
+
+; virtual desktop
+<^<#RControl::Send ^#{RIGHT}
+<^<#RAlt::Send ^#{LEFT}
 
 ; preserve the behavior of holding the SHIFT/CTRL/WIN/ALT keys
 >+\:: Send {Shift Down}{\}{Shift Up}
